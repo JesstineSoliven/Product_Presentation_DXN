@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DXN — Product Knowledge</title>
+
+<!-- Design System -->
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+
+<!-- Slide-Specific Styles -->
+<link rel="stylesheet" href="css/slides/s01-hero.css">
+<link rel="stylesheet" href="css/slides/s02-market.css">
+<link rel="stylesheet" href="css/slides/s03-products.css">
+<link rel="stylesheet" href="css/slides/s05-dividers.css">
+<link rel="stylesheet" href="css/slides/s07-compare.css">
+<link rel="stylesheet" href="css/slides/s20-closing.css">
+</head>
+<body>
+
+<canvas id="particleCanvas"></canvas>
+<div id="progress-bar"></div>
+<nav id="nav"></nav>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 01 — HERO
+══════════════════════════════════════════════ -->
+<section class="slide" id="s1" data-label="Welcome">
+  <div class="ring1 orbit-ring"></div>
+  <div class="ring2 orbit-ring"></div>
+  <div class="ring3 orbit-ring"></div>
+
+  <div class="slide-inner">
+    <div style="max-width:700px">
+      <div class="section-label">DXN International · Product Knowledge</div>
+      <h1 class="hero-title"><span style="color:#ffffff">Nature's</span><br><span style="color:#ffffff">Intelligence</span><br><span style="color:#ffffff">Engineered.</span></h1>
+      <p class="hero-sub">A comprehensive guide to DXN's world-class product ecosystem — rooted in ancient wisdom, powered by modern science.</p>
+
+      <div style="display:flex;gap:40px;margin-top:48px;opacity:0;transform:translateY(20px);transition:all .8s ease .4s" class="hero-stats">
+        <div>
+          <div class="stat-num">180+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div style="width:1px;background:rgba(73,136,196,.2)"></div>
+        <div>
+          <div class="stat-num">400+</div>
+          <div class="stat-label">Active Elements</div>
+        </div>
+        <div style="width:1px;background:rgba(73,136,196,.2)"></div>
+        <div>
+          <div class="stat-num">30+</div>
+          <div class="stat-label">Years of Science</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-logo-wrap">
+    <img src="Images/Slide_1/DXN_Logo.png" class="hero-logo-float" alt="DXN Logo">
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll to explore</span>
+  </div>
+  <div class="slide-footer">DXN Product Knowledge Training</div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 02 — MARKET OPPORTUNITY
+══════════════════════════════════════════════ -->
+<section class="slide" id="s2" data-label="Market">
+  <div class="s2-img-wrap">
+    <img src="Images/Slide_2/img1.jpg" class="s2-img" alt="">
+  </div>
+  <div class="slide-inner">
+    <div class="section-label">Global Opportunity</div>
+    <h2 class="section-title">The World is Turning<br>to <span class="gold">Natural Health</span></h2>
+    <div class="gold-line"></div>
+    <p class="section-body">The World Health Organization (WHO) projects the global herbal products market to reach <strong style="color:var(--gold)">USD 50 Trillion by 2050</strong>. DXN is positioned at the epicenter of this transformation.</p>
+
+    <div class="market-timeline card" style="margin-top:40px">
+      <div class="market-bar-wrap">
+        <div class="market-val" data-prefix="USD " data-count="80" data-suffix="B">USD 0B</div>
+        <div class="market-bar" data-h="80"></div>
+        <div class="market-year">Year 2000</div>
+      </div>
+      <div style="display:flex;align-items:center;color:var(--gold);font-size:24px;padding-bottom:32px">&#8594;</div>
+      <div class="market-bar-wrap">
+        <div class="market-val" data-prefix="USD " data-count="200" data-suffix="B">USD 0B</div>
+        <div class="market-bar" data-h="140"></div>
+        <div class="market-year">Year 2008</div>
+      </div>
+      <div style="display:flex;align-items:center;color:var(--gold);font-size:24px;padding-bottom:32px">&#8594;</div>
+      <div class="market-bar-wrap">
+        <div class="market-val" data-prefix="USD " data-count="50" data-suffix="T">USD 0T</div>
+        <div class="market-bar" data-h="220" style="background:linear-gradient(180deg,var(--gold-lt),var(--gold))"></div>
+        <div class="market-year">Year 2050 <span style="color:var(--gold);font-size:11px">(projected)</span></div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p><strong>DXN Products Future:</strong> As the global shift toward natural, preventive health accelerates, DXN's unique farm-to-product model positions members to capture generational opportunity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 02B — PRODUCT KNOWLEDGE TRAINING
+══════════════════════════════════════════════ -->
+<section class="slide" id="s2b" data-label="Products">
+  <img src="Images/Slide_1/DXN_Logo.png" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0.06;pointer-events:none;user-select:none;z-index:0;padding:60px">
+  <div class="slide-inner" style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:space-between;height:calc(100vh - 120px)">
+
+    <!-- Title Header -->
+    <div style="width:100%;flex-shrink:0">
+      <div class="section-label" style="justify-content:center">DXN International · Product Overview</div>
+      <h2 class="section-title">Product Knowledge<br><span class="gold">Training</span></h2>
+      <div class="gold-line" style="margin-left:auto;margin-right:auto"></div>
+    </div>
+
+    <!-- Product Image (main focal element) -->
+    <div class="s2b-img-wrap" style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:12px 0;width:100%">
+      <img
+        src="Images/Slide_3/Products.png"
+        alt="DXN Product Range"
+        style="max-width:140%;max-height:140%;object-fit:contain;filter:drop-shadow(0 10px 40px rgba(15,40,84,0.13))"
+      >
+    </div>
+
+    <!-- Separator + Disclaimer -->
+    <div style="width:100%;flex-shrink:0;padding-top:8px">
+      <div class="s2b-sep" style="width:80px;height:1px;background:linear-gradient(90deg,transparent,rgba(73,136,196,.3),transparent);margin:0 auto 12px"></div>
+      <p class="disclaimer s2b-disclaimer">
+        Food and dietary supplement products sold by DXN are intended to contribute to the daily diet and overall health and are not intended for use in the prevention, treatment, mitigation, or cure of any disease or health related condition. Consult an appropriately licensed health care practitioner for a medical history evaluation, diagnosis, treatment, and health recommendations.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 03 — COMPANY OVERVIEW
+══════════════════════════════════════════════ -->
+<section class="slide" id="s3" data-label="Company" style="position:relative;overflow:hidden">
+  <img src="Images/Slide_1/DXN_Logo.png" alt="" aria-hidden="true" style="position:absolute;right:-80px;top:50%;transform:translateY(-50%);width:65%;max-width:700px;opacity:0.05;pointer-events:none;user-select:none;z-index:0;object-fit:contain">
+  <div class="slide-inner" style="position:relative;z-index:1">
+    <div class="section-label">One Total Company</div>
+    <h2 class="section-title">Company Profile</h2>
+    <div class="gold-line"></div>
+    <p class="section-body">DXN controls every stage of the value chain — from cultivation to your door. This vertical integration ensures unmatched quality, purity, and cost advantage.</p>
+
+    <div class="grid-3" style="margin-top:40px">
+      <div class="card" style="text-align:center">
+        <div class="icon-badge" style="margin:0 auto 16px">&#127807;</div>
+        <div class="card-title">Cultivates</div>
+        <div class="card-text">Organic Ganoderma farms using proprietary tissue culture. Zero compromise on genetic integrity and soil purity.</div>
+      </div>
+      <div class="card" style="text-align:center;border-color:rgba(73,136,196,.35)">
+        <div class="icon-badge" style="margin:0 auto 16px">&#9879;&#65039;</div>
+        <div class="card-title">Manufactures</div>
+        <div class="card-text">In-house GMP-certified production facilities. Cold processing and micro-powderization preserve every bioactive compound.</div>
+      </div>
+      <div class="card" style="text-align:center">
+        <div class="icon-badge" style="margin:0 auto 16px">&#127760;</div>
+        <div class="card-title">Distributes</div>
+        <div class="card-text">A global network spanning 180+ countries. Minimal overhead — savings redirected as member bonuses (up to 60%).</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px;display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+      <div style="flex:1;min-width:200px">
+        <div class="card-title" style="font-size:22px">40% Manufacturing Cost</div>
+        <div class="card-text">The rest — 60% — goes back to the network as bonuses, replacing traditional advertising and retail markup.</div>
+      </div>
+      <div style="display:flex;gap:3px;align-items:flex-end">
+        <div style="width:40px;height:80px;background:linear-gradient(180deg,var(--gold),var(--gold-dk));border-radius:6px 6px 0 0"></div>
+        <div style="width:40px;height:120px;background:linear-gradient(180deg,var(--green-lt),var(--green));border-radius:6px 6px 0 0"></div>
+      </div>
+      <div style="font-size:12px;color:var(--cream-dk)"><span style="color:var(--gold)">&#9632;</span> Mfg Cost &nbsp;<span style="color:var(--green-lt)">&#9632;</span> Member Bonus</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 04 — PRODUCTION TECHNOLOGY
+══════════════════════════════════════════════ -->
+<section class="slide" id="s4" data-label="Technology">
+  <div class="slide-inner">
+    <div class="section-label">Unique Production Technology</div>
+    <h2 class="section-title">Science Behind<br>Every <span class="gold">Capsule</span></h2>
+    <div class="gold-line"></div>
+
+    <div class="grid-2" style="margin-top:40px;gap:16px">
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#129516;</div>
+        <div>
+          <div class="card-title">Tissue Culture</div>
+          <div class="card-text">Ensures consistent genetic values across every batch. Identical potency, guaranteed purity.</div>
+        </div>
+      </div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#127807;</div>
+        <div>
+          <div class="card-title">Organic Cultivation</div>
+          <div class="card-text">Chemical-free farming preserves all natural bioactive values. No synthetic inputs, ever.</div>
+        </div>
+      </div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#10052;&#65039;</div>
+        <div>
+          <div class="card-title">Cold Processing</div>
+          <div class="card-text">No heat treatment. Delicate enzymes, vitamins, and polysaccharides remain fully intact.</div>
+        </div>
+      </div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#128300;</div>
+        <div>
+          <div class="card-title">Micro/Spore Powderization</div>
+          <div class="card-text">Particle-level reduction maximizes surface area and dramatically increases nutrient absorption rate.</div>
+        </div>
+      </div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#129514;</div>
+        <div>
+          <div class="card-title">Fiber Separation</div>
+          <div class="card-text">High-concentration extraction removes fiber to deliver pure, bioavailable active compounds.</div>
+        </div>
+      </div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#9728;&#65039;</div>
+        <div>
+          <div class="card-title">Ultra Violet Treatment</div>
+          <div class="card-text">UV processing enhances the biological effect and eliminates microbial contamination without chemicals.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 05 — DIVIDER: GANODERMA
+══════════════════════════════════════════════ -->
+<section class="slide section-divider-slide" id="s5" data-label="Ganoderma">
+  <div class="divider-num">01</div>
+  <div class="slide-inner" style="text-align:center">
+    <div class="section-label" style="justify-content:center">The Foundation</div>
+    <div class="divider-sub">The King of Herbs</div>
+    <h2 class="divider-title" style="opacity:0;transform:translateY(20px);transition:all .8s ease .1s">
+      <span style="color:var(--gold)">Ganoderma</span><br>Lucidum
+    </h2>
+    <p style="margin-top:20px;color:var(--cream-dk);font-size:16px;max-width:500px;margin-left:auto;margin-right:auto;opacity:0;transition:all .7s ease .3s">
+      Used by Chinese, Japanese, Taiwanese, and Korean civilizations for centuries — recognized as the Herb of Spiritual Potency and Deathlessness.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 06 — GANODERMA SCIENCE
+══════════════════════════════════════════════ -->
+<section class="slide" id="s6" data-label="Science">
+  <div class="slide-inner">
+    <div class="col-split">
+      <div>
+        <div class="section-label">Bioactive Profile</div>
+        <h2 class="section-title">More Than<br><span class="gold">400 Active</span><br>Elements</h2>
+        <div class="gold-line"></div>
+        <p class="section-body">Ganoderma Lucidum is the most researched medicinal mushroom on earth. Its complexity cannot be replicated by any single pharmaceutical compound.</p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;opacity:0;transform:translateY(12px);transition:all .7s ease .3s" class="pill-row">
+          <span class="pill">Polysaccharides</span>
+          <span class="pill">Triterpenoids</span>
+          <span class="pill">Organic Germanium</span>
+          <span class="pill">Adenosine</span>
+          <span class="pill">Ganoderic Essence</span>
+          <span class="pill">Ganoderic Acid</span>
+          <span class="pill">Beta-Glucan</span>
+          <span class="pill">Minerals</span>
+          <span class="pill">Vitamins</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <div class="dot dot-green" style="width:12px;height:12px"></div>
+            <div class="card-title">Adaptogen Power</div>
+          </div>
+          <div class="card-text">Non-toxic, acts on all organs and tissues simultaneously, and produces an overall normalizing effect — unlike drugs targeting a single pathway.</div>
+        </div>
+        <div class="card" style="margin-bottom:16px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <div class="dot dot-green" style="width:12px;height:12px"></div>
+            <div class="card-title">Natural Technology</div>
+          </div>
+          <div class="card-text">Where pharmaceuticals use single synthetic molecules, Ganoderma delivers a symphony of 400+ natural elements working in biological harmony.</div>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <div class="dot dot-green" style="width:12px;height:12px"></div>
+            <div class="card-title">Body Wellness Focus</div>
+          </div>
+          <div class="card-text">Prevention-oriented. Supports overall body wellness rather than targeting specific disease symptoms. Promotes long-term vitality.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 07 — DRUG vs GANODERMA
+══════════════════════════════════════════════ -->
+<section class="slide" id="s7" data-label="Approach">
+  <div class="slide-inner s7-inner">
+
+    <div style="flex-shrink:0">
+      <div class="section-label" style="justify-content:center">Two Fundamentally Different Philosophies</div>
+      <div class="s7-title-row">
+        <h2 class="section-title">Drug vs Ganoderma</h2>
+      </div>
+      <div class="gold-line"></div>
+    </div>
+
+    <!-- ── Battle Grid ── -->
+    <div class="s7-battle">
+
+      <!-- ── Drug Box ── -->
+      <div class="s7-col-wrap s7-drug-wrap">
+        <div class="s7-col-head">
+          
+          <div class="s7-score-badge s7-score-drug">0 / 6 &nbsp;✗</div>
+          <div class="s7-head-name">Synthetic Drug</div>
+          <div class="s7-head-sub">Conventional Medicine</div>
+        </div>
+        <div class="s7-cell"><span class="s7-x">✗</span><span class="s7-cell-text">Causes adverse side effects on healthy tissue</span></div>
+        <div class="s7-cell"><span class="s7-x">✗</span><span class="s7-cell-text">Suppresses specific symptoms — root cause ignored</span></div>
+        <div class="s7-cell"><span class="s7-x">✗</span><span class="s7-cell-text">Targets a single organ or biological pathway</span></div>
+        <div class="s7-cell"><span class="s7-x">✗</span><span class="s7-cell-text">Lab-engineered — foreign to natural biology</span></div>
+        <div class="s7-cell"><span class="s7-x">✗</span><span class="s7-cell-text">Single synthetic molecule — narrow biological fit</span></div>
+        <div class="s7-cell s7-last"><span class="s7-x">✗</span><span class="s7-cell-text">Risk of overdose, toxicity &amp; dependency</span></div>
+      </div>
+
+      <!-- ── Center VS Column ── -->
+      <div class="s7-center-col">
+        <div class="s7-cat-head"><div class="s7-vs-orb">VS</div></div>
+        <div class="s7-cat-cell">Side<br>Effects</div>
+        <div class="s7-cat-cell">Approach</div>
+        <div class="s7-cat-cell">Coverage</div>
+        <div class="s7-cat-cell">Origin</div>
+        <div class="s7-cat-cell">Formula</div>
+        <div class="s7-cat-cell">Safety</div>
+      </div>
+
+      <!-- ── Ganoderma Box ── -->
+      <div class="s7-col-wrap s7-gano-wrap">
+        <div class="s7-col-head">
+         
+          <div class="s7-score-badge s7-score-gano">6 / 6 &nbsp;✓</div>
+          <div class="s7-head-name">Ganoderma</div>
+          <div class="s7-head-sub">Nature's Intelligence</div>
+        </div>
+        <div class="s7-cell"><span class="s7-check">✓</span><span class="s7-cell-text">Ailment reflection only — zero harmful side effects</span></div>
+        <div class="s7-cell"><span class="s7-check">✓</span><span class="s7-cell-text">Addresses root causes — whole-body prevention focus</span></div>
+        <div class="s7-cell"><span class="s7-check">✓</span><span class="s7-cell-text">Normalizes every organ and tissue simultaneously</span></div>
+        <div class="s7-cell"><span class="s7-check">✓</span><span class="s7-cell-text">4,000+ years of natural technology — biologically compatible</span></div>
+        <div class="s7-cell"><span class="s7-check">✓</span><span class="s7-cell-text">400+ synergistic bioactive elements in perfect harmony</span></div>
+        <div class="s7-cell s7-last"><span class="s7-check">✓</span><span class="s7-cell-text">Non-toxic adaptogen — safe at any consumption level</span></div>
+      </div>
+
+    </div><!-- /s7-battle -->
+
+    <!-- ── Verdict ── -->
+    <div class="s7-verdict">
+      <div class="s7-verdict-icon">🏆</div>
+      <div class="s7-verdict-body">
+        <p><strong>Nature's Verdict:</strong> Where drugs fight single battles, Ganoderma empowers your body's own intelligence to restore balance — 400+ elements, one mushroom, whole-body harmony.</p>
+        <p class="s7-disclaimer-txt">Food and dietary supplement products sold by DXN are intended to contribute to the daily diet and overall health and are not intended for use in the prevention, treatment, mitigation, or cure of any disease or health-related condition. Consult a licensed healthcare practitioner.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 08 — DIVIDER: FOOD SUPPLEMENTS
+══════════════════════════════════════════════ -->
+<section class="slide section-divider-slide" id="s8" data-label="Supplements">
+  <div class="divider-num">02</div>
+  <div class="slide-inner" style="text-align:center">
+    <div class="section-label" style="justify-content:center">Product Category</div>
+    <div class="divider-sub">DXN Core Range</div>
+    <h2 class="divider-title" style="opacity:0;transform:translateY(20px);transition:all .8s ease .1s">
+      Food<br><span style="color:var(--gold)">Supplements</span>
+    </h2>
+    <p style="margin-top:20px;color:var(--cream-dk);font-size:16px;max-width:500px;margin-left:auto;margin-right:auto;opacity:0;transition:all .7s ease .3s">
+      Scientifically formulated, organically sourced supplements that form the cornerstone of the DXN wellness ecosystem.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 09 — RG & GL
+══════════════════════════════════════════════ -->
+<section class="slide" id="s9" data-label="RG &amp; GL">
+  <div class="slide-inner">
+    <div class="section-label">Flagship Supplements</div>
+    <h2 class="section-title">RG &amp; GL — The<br><span class="gold">Ganoderma Duo</span></h2>
+    <div class="gold-line"></div>
+
+    <div class="grid-2" style="margin-top:36px">
+      <div class="card" style="border-color:rgba(73,136,196,.35)">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
+          <div class="icon-badge" style="font-size:32px">&#127812;</div>
+          <div>
+            <div class="card-title" style="font-size:22px">Reishi Gano (RG)</div>
+            <div style="font-size:12px;color:var(--gold);font-style:italic">Ganoderma lucidum · 90-day fruiting body</div>
+          </div>
+        </div>
+        <div class="card-text" style="margin-bottom:16px">Harvested from the fully mature 90-day old red mushroom — the most potent stage. Rich in complex bioactives with powerful detoxification properties.</div>
+        <div style="font-size:12px;color:var(--gold);font-weight:600;margin-bottom:8px;letter-spacing:.05em">MORE POTENT IN:</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="pill">Triterpenoids</span>
+          <span class="pill">Adenosine</span>
+          <span class="pill">Polysaccharides</span>
+        </div>
+        <div style="margin-top:16px;padding:12px;background:rgba(73,136,196,.06);border-radius:10px;font-size:13px;color:var(--cream-dk)">
+          <strong style="color:var(--gold)">Key Role:</strong> Detoxification — clears accumulated toxins and free radicals from the body.
+        </div>
+      </div>
+
+      <div class="card" style="border-color:rgba(28,77,141,.5)">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
+          <div class="icon-badge" style="font-size:32px;background:linear-gradient(135deg,var(--green),var(--green-lt))">&#127807;</div>
+          <div>
+            <div class="card-title" style="font-size:22px">Ganocelium (GL)</div>
+            <div style="font-size:12px;color:var(--green-lt);font-style:italic">Ganoderma lucidum · 14-day mycelium</div>
+          </div>
+        </div>
+        <div class="card-text" style="margin-bottom:16px">Harvested at 14 days — the vegetative structure before the fruiting body forms. Concentrates vital minerals and balancing compounds unique to early-stage growth.</div>
+        <div style="font-size:12px;color:var(--green-lt);font-weight:600;margin-bottom:8px;letter-spacing:.05em">MORE POTENT IN:</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="pill" style="border-color:rgba(28,77,141,.4);color:var(--green-lt)">Organic Germanium</span>
+          <span class="pill" style="border-color:rgba(28,77,141,.4);color:var(--green-lt)">Ganoderic Acid</span>
+          <span class="pill" style="border-color:rgba(28,77,141,.4);color:var(--green-lt)">Minerals</span>
+          <span class="pill" style="border-color:rgba(28,77,141,.4);color:var(--green-lt)">Vitamins</span>
+        </div>
+        <div style="margin-top:16px;padding:12px;background:rgba(28,77,141,.08);border-radius:10px;font-size:13px;color:var(--cream-dk)">
+          <strong style="color:var(--green-lt)">Key Role:</strong> Balancing — restores mineral balance, boosts oxygen circulation, enhances immunity.
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p>RG and GL work synergistically — RG <strong>detoxifies</strong>, GL <strong>rebuilds and balances</strong>. Together they deliver comprehensive Ganoderma wellness support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 10 — SPIRULINA
+══════════════════════════════════════════════ -->
+<section class="slide" id="s10" data-label="Spirulina">
+  <div class="slide-inner">
+    <div class="col-split">
+      <div>
+        <div class="section-label">Superfood Supplement</div>
+        <h2 class="section-title">DXN<br><span class="gold">Spirulina</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-body">Nature's most complete food source. Spirulina packs more nutrition per gram than virtually any other food on earth — a full orchestra of macro and micro nutrients.</p>
+
+        <div style="margin-top:32px">
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h4>Complete Protein Source</h4>
+                <p>Contains all essential amino acids. Up to 70% protein by dry weight — superior to meat, soy, and dairy.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h4>Antioxidant Rich</h4>
+                <p>Phycocyanin and beta-carotene neutralize free radicals and protect cells from oxidative damage.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h4>Alkaline Food Source</h4>
+                <p>Helps restore the body's ideal alkaline-acidic ratio essential for cellular energy and immunity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="card">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div style="text-align:center;padding:12px;background:rgba(73,136,196,.07);border-radius:10px">
+              <div style="font-size:22px;font-weight:800;color:var(--gold)">&#10003;</div>
+              <div style="font-size:13px;color:var(--cream-dk);margin-top:4px">Good Quality Protein</div>
+            </div>
+            <div style="text-align:center;padding:12px;background:rgba(73,136,196,.07);border-radius:10px">
+              <div style="font-size:22px;font-weight:800;color:var(--gold)">&#10003;</div>
+              <div style="font-size:13px;color:var(--cream-dk);margin-top:4px">Quality Carbohydrate</div>
+            </div>
+            <div style="text-align:center;padding:12px;background:rgba(73,136,196,.07);border-radius:10px">
+              <div style="font-size:22px;font-weight:800;color:var(--gold)">&#10003;</div>
+              <div style="font-size:13px;color:var(--cream-dk);margin-top:4px">Essential Fats</div>
+            </div>
+            <div style="text-align:center;padding:12px;background:rgba(73,136,196,.07);border-radius:10px">
+              <div style="font-size:22px;font-weight:800;color:var(--gold)">&#10003;</div>
+              <div style="font-size:13px;color:var(--cream-dk);margin-top:4px">Phytonutrients</div>
+            </div>
+            <div style="text-align:center;padding:12px;background:rgba(73,136,196,.07);border-radius:10px">
+              <div style="font-size:22px;font-weight:800;color:var(--gold)">&#10003;</div>
+              <div style="font-size:13px;color:var(--cream-dk);margin-top:4px">Wide Range Vitamins</div>
+            </div>
+            <div style="text-align:center;padding:12px;background:rgba(73,136,196,.07);border-radius:10px">
+              <div style="font-size:22px;font-weight:800;color:var(--gold)">&#10003;</div>
+              <div style="font-size:13px;color:var(--cream-dk);margin-top:4px">Natural Chlorophyll</div>
+            </div>
+          </div>
+        </div>
+        <div class="callout" style="margin-top:0">
+          <p><strong>Food Orchestra:</strong> Spirulina contains the full symphony of nutrients the body needs — making it the ultimate daily nutritional supplement.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 11 — DIVIDER: BEVERAGES
+══════════════════════════════════════════════ -->
+<section class="slide section-divider-slide" id="s11" data-label="Beverages">
+  <div class="divider-num">03</div>
+  <div class="slide-inner" style="text-align:center">
+    <div class="section-label" style="justify-content:center">Product Category</div>
+    <div class="divider-sub">DXN Range</div>
+    <h2 class="divider-title" style="opacity:0;transform:translateY(20px);transition:all .8s ease .1s">
+      Food &amp;<br><span style="color:var(--gold)">Beverages</span>
+    </h2>
+    <p style="margin-top:20px;color:var(--cream-dk);font-size:16px;max-width:500px;margin-left:auto;margin-right:auto;opacity:0;transition:all .7s ease .3s">
+      Everyday wellness in every cup. DXN transforms your daily rituals into powerful health acts.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 12 — COFFEE RANGE
+══════════════════════════════════════════════ -->
+<section class="slide" id="s12" data-label="Coffee">
+  <div class="slide-inner">
+    <div class="section-label">Beverages · Coffee Range</div>
+    <h2 class="section-title">Lingzhi<br><span class="gold">Coffee</span></h2>
+    <div class="gold-line"></div>
+    <p class="section-body">The world's first Ganoderma-infused coffee. No artificial coloring, no preservatives. Every cup delivers both pleasure and wellness.</p>
+
+    <div class="grid-3" style="margin-top:36px">
+      <div class="card">
+        <div class="icon-badge">&#9749;</div>
+        <div class="card-title">Lingzhi Coffee 3 in 1</div>
+        <div class="card-text">Finest quality coffee + 100% pure Ganoderma + low fat cream + sugar. Anti-stress, diuretic, adaptogenic. Reduces daily life stress.</div>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:4px">
+          <span class="pill">Anti-stress</span><span class="pill">Antioxidant</span><span class="pill">Adaptogen</span>
+        </div>
+      </div>
+      <div class="card" style="border-color:rgba(73,136,196,.3)">
+        <div class="icon-badge">&#9749;</div>
+        <div class="card-title">Lingzhi 2 in 1 Black</div>
+        <div class="card-text">No sugar, no milk. Pure Ganoderma extract + aromatic coffee. Ideal for diabetics. Refreshes mood without blood sugar impact.</div>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:4px">
+          <span class="pill">Sugar-free</span><span class="pill">Diabetic-friendly</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon-badge">&#127812;</div>
+        <div class="card-title">Cordyceps Coffee</div>
+        <div class="card-text">Smooth and aromatic instant coffee enriched with premium Cordyceps extract. Zest up your day with energy-enhancing properties.</div>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:4px">
+          <span class="pill">Energy</span><span class="pill">Cordyceps</span><span class="pill">Aromatic</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p>DXN coffee is not just a beverage — it's a <strong>delivery system</strong> for Ganoderma's adaptogenic compounds. Fast-consumable, high-penetrating, enzyme-rich.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 13 — COCOZHI & MORINZHI
+══════════════════════════════════════════════ -->
+<section class="slide" id="s13" data-label="Drinks">
+  <div class="slide-inner">
+    <div class="section-label">Beverages · Wellness Drinks</div>
+    <h2 class="section-title">Cocozhi &amp;<br><span class="gold">Morinzhi</span></h2>
+    <div class="gold-line"></div>
+
+    <div class="grid-2" style="margin-top:36px">
+      <div class="card" style="border-color:rgba(73,136,196,.3)">
+        <div style="display:flex;gap:16px;align-items:flex-start">
+          <div class="icon-badge" style="font-size:32px">&#127851;</div>
+          <div>
+            <div class="card-title" style="font-size:20px">Cocozhi</div>
+            <div style="font-size:12px;color:var(--gold);margin-bottom:12px">Ganoderma + Cocoa · Alkaline Drink</div>
+            <div class="card-text" style="margin-bottom:16px">Contains Ganoderma and Theobroma Cacao. Natural, alkaline, antioxidant-rich, enzyme drink with excellent nutritional values.</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+          <div style="background:rgba(28,77,141,.15);border:1px solid rgba(28,77,141,.3);border-radius:10px;padding:12px;text-align:center">
+            <div style="font-size:11px;font-weight:700;color:#e07070;letter-spacing:.05em">Carbonated Drink</div>
+            <div style="font-size:11px;color:var(--cream-dk);margin-top:6px">Acidic · Free Radicals<br>Empty Calories</div>
+          </div>
+          <div style="background:rgba(28,77,141,.1);border:1px solid rgba(28,77,141,.35);border-radius:10px;padding:12px;text-align:center">
+            <div style="font-size:11px;font-weight:700;color:#4988C4;letter-spacing:.05em">Cocozhi</div>
+            <div style="font-size:11px;color:var(--cream-dk);margin-top:6px">Alkaline · No Free Radicals<br>Good Nutrition</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="display:flex;gap:16px;align-items:flex-start">
+          <div class="icon-badge" style="font-size:32px;background:linear-gradient(135deg,var(--green),var(--green-lt))">&#127817;</div>
+          <div>
+            <div class="card-title" style="font-size:20px">Morinzhi</div>
+            <div style="font-size:12px;color:var(--green-lt);margin-bottom:12px">Morinda citrifolia · Noni + Roselle Fruit</div>
+            <div class="card-text">Own cultivation. Manufactured in-house. No additives, artificial flavoring, coloring or preservatives. Rich in natural ingredients.</div>
+          </div>
+        </div>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:4px">
+          <div class="compare-item"><div class="dot dot-green"></div><span style="font-size:13px;color:var(--cream-dk)">Enhances digestion</span></div>
+          <div class="compare-item"><div class="dot dot-green"></div><span style="font-size:13px;color:var(--cream-dk)">Improves blood circulation</span></div>
+          <div class="compare-item"><div class="dot dot-green"></div><span style="font-size:13px;color:var(--cream-dk)">Neutralizes free radicals</span></div>
+          <div class="compare-item"><div class="dot dot-green"></div><span style="font-size:13px;color:var(--cream-dk)">Supports defense system</span></div>
+          <div class="compare-item" style="border:none"><div class="dot dot-green"></div><span style="font-size:13px;color:var(--cream-dk)">Helps lower blood pressure</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 14 — DIVIDER: PERSONAL CARE
+══════════════════════════════════════════════ -->
+<section class="slide section-divider-slide" id="s14" data-label="Personal Care">
+  <div class="divider-num">04</div>
+  <div class="slide-inner" style="text-align:center">
+    <div class="section-label" style="justify-content:center">Product Category</div>
+    <div class="divider-sub">DXN Range</div>
+    <h2 class="divider-title" style="opacity:0;transform:translateY(20px);transition:all .8s ease .1s">
+      Personal &amp;<br><span style="color:var(--gold)">Skincare</span>
+    </h2>
+    <p style="margin-top:20px;color:var(--cream-dk);font-size:16px;max-width:500px;margin-left:auto;margin-right:auto;opacity:0;transition:all .7s ease .3s">
+      "What is good for your stomach is good for your face." — DXN's outside-in philosophy of skin wellness.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 15 — PERSONAL CARE PRODUCTS
+══════════════════════════════════════════════ -->
+<section class="slide" id="s15" data-label="Skincare">
+  <div class="slide-inner">
+    <div class="section-label">Personal &amp; Skincare</div>
+    <h2 class="section-title">Ganoderma<br><span class="gold">For Your Skin</span></h2>
+    <div class="gold-line"></div>
+    <p class="section-body">Your skin is the body's largest organ — its most powerful detoxification pathway and most neglected. DXN brings Ganoderma intelligence to every daily care ritual.</p>
+
+    <div class="grid-2" style="margin-top:36px">
+      <div class="card" style="display:flex;gap:16px">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#129532;</div>
+        <div>
+          <div class="card-title">Ganozhi Soap</div>
+          <div class="card-text">Palm oil base + Ganoderma. Increases skin penetrating power. pH balanced (4.5–6.5). Body, Baby, and Shaving variants.</div>
+          <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap"><span class="pill">pH 4.5–6.5</span><span class="pill">Gano-enriched</span></div>
+        </div>
+      </div>
+      <div class="card" style="display:flex;gap:16px">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#129714;</div>
+        <div>
+          <div class="card-title">Ganozhi Toothpaste</div>
+          <div class="card-text">No saccharin, no coloring. High-quality Ganoderma extract + food gel + menthol. Whiter, healthier teeth and lasting fresh breath.</div>
+          <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap"><span class="pill">Saccharin-free</span><span class="pill">75g / 150g</span></div>
+        </div>
+      </div>
+      <div class="card" style="display:flex;gap:16px">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#127807;</div>
+        <div>
+          <div class="card-title">Gano Massage Oil</div>
+          <div class="card-text">100% pure palm oil with Ganoderma extract. Best relief for tired muscles and legs. Hair &amp; body hot oil treatment and first aid use.</div>
+          <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap"><span class="pill">Muscle relief</span><span class="pill">Hair treatment</span></div>
+        </div>
+      </div>
+      <div class="card" style="display:flex;gap:16px">
+        <div class="icon-badge" style="width:44px;height:44px;font-size:20px;flex-shrink:0">&#127804;</div>
+        <div>
+          <div class="card-title">DXN Aloe V</div>
+          <div class="card-text">Natural Aloe Vera formulation. Antioxidant properties, pH balancing, and deep nutritional support for the skin from within.</div>
+          <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap"><span class="pill">Antioxidant</span><span class="pill">pH Balancer</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 16 — FOOD THEORIES
+══════════════════════════════════════════════ -->
+<section class="slide" id="s16" data-label="Theories">
+  <div class="slide-inner">
+    <div class="section-label">Product Knowledge Framework</div>
+    <h2 class="section-title">3 Food Theories<br>That <span class="gold">Create Demand</span></h2>
+    <div class="gold-line"></div>
+    <p class="section-body">Understanding these food science theories is the key to communicating product value — and generating natural, consistent sales demand.</p>
+
+    <div class="grid-3" style="margin-top:36px">
+      <div class="card" style="border-top:3px solid var(--gold)">
+        <div class="icon-badge" style="font-size:28px">&#9878;&#65039;</div>
+        <div class="card-title">Acidic vs Alkaline</div>
+        <div class="card-text">The body needs alkaline to acidic food in a 4:1 ratio. Modern diet reverses this — causing cellular stress and disease susceptibility.</div>
+        <div style="margin-top:12px;padding:10px;background:rgba(73,136,196,.06);border-radius:8px;font-size:12px;color:var(--gold)">
+          DXN: RG/GL, Lingzhi Coffee, Spirulina, Morinzhi, Spica Tea
+        </div>
+      </div>
+      <div class="card" style="border-top:3px solid var(--gold)">
+        <div class="icon-badge" style="font-size:28px">&#128300;</div>
+        <div class="card-title">Enzyme Theory</div>
+        <div class="card-text">Diabetes is not the core problem — the root is enzymatic deficiency leading to digestive failure and metabolic disease.</div>
+        <div style="margin-top:12px;padding:10px;background:rgba(73,136,196,.06);border-radius:8px;font-size:12px;color:var(--gold)">
+          DXN: RG/GL, Spirulina, Morinzyme, Cordypine
+        </div>
+      </div>
+      <div class="card" style="border-top:3px solid var(--gold)">
+        <div class="icon-badge" style="font-size:28px">&#129657;</div>
+        <div class="card-title">Green Theory</div>
+        <div class="card-text">The cycle of red blood cell production depends on chlorophyll-rich green food inputs for healthy hemoglobin and oxygen delivery.</div>
+        <div style="margin-top:12px;padding:10px;background:rgba(73,136,196,.06);border-radius:8px;font-size:12px;color:var(--gold)">
+          DXN: Spirulina — richest natural chlorophyll source
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 17 — ENZYME THEORY DETAIL
+══════════════════════════════════════════════ -->
+<section class="slide" id="s17" data-label="Enzyme">
+  <div class="slide-inner">
+    <div class="col-split">
+      <div>
+        <div class="section-label">Food Theory · Deep Dive</div>
+        <h2 class="section-title">The<br><span class="gold">Enzyme</span><br>Theory</h2>
+        <div class="gold-line"></div>
+        <p class="section-body">The real root of metabolic disease is not the disease itself — it's what's missing upstream. Enzymes are the spark of life that modern processed food destroys.</p>
+        <div class="callout">
+          <p><strong>Insight:</strong> Modern processed food is enzyme-dead. The pancreas compensates until it breaks down. DXN's enzyme-rich products restore this missing spark and rebuild digestive integrity.</p>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="padding:32px">
+          <div class="card-title" style="margin-bottom:20px;font-size:18px;color:var(--gold)">The Root Cause Chain</div>
+          <div class="theory-flow">
+            <div class="theory-step"><strong>Lack of Enzyme</strong> in processed modern food</div>
+            <div class="theory-arrow">&#8595;</div>
+            <div class="theory-step"><strong>Food Problem</strong> — incomplete digestion cycle</div>
+            <div class="theory-arrow">&#8595;</div>
+            <div class="theory-step"><strong>Digestive Problem</strong> — gut microbiome stress</div>
+            <div class="theory-arrow">&#8595;</div>
+            <div class="theory-step"><strong>Pancreas Problem</strong> — overworked insulin production</div>
+            <div class="theory-arrow">&#8595;</div>
+            <div class="theory-step" style="border-color:rgba(224,112,112,.35);background:rgba(224,112,112,.06)"><strong style="color:#e07070">Diabetes</strong> — the visible symptom, not the true cause</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 18 — PRODUCT POSITIONING
+══════════════════════════════════════════════ -->
+<section class="slide" id="s18" data-label="Positioning">
+  <div class="slide-inner">
+    <div class="section-label">Strategic Framework</div>
+    <h2 class="section-title">Why Your Body<br>Needs <span class="gold">DXN</span></h2>
+    <div class="gold-line"></div>
+
+    <div class="grid-2" style="margin-top:36px">
+      <div>
+        <p class="section-body" style="margin-top:0">The human body is a bundle of cells. Like a high-performance vehicle, it needs constant maintenance — but it's under constant siege from modern life.</p>
+        <div style="margin-top:24px">
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">&#9889;</div>
+              <div class="step-content">
+                <h4>Modern Lifestyle Threats</h4>
+                <p>Toxins, free radicals, stress, poor eating habits — all compromise cellular function and energy production daily.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">&#128267;</div>
+              <div class="step-content">
+                <h4>Cellular Energy Formula</h4>
+                <p>Each cell needs Oxygen + Nutrition to produce Energy. Waste products must be efficiently eliminated for optimal function.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">&#128737;&#65039;</div>
+              <div class="step-content">
+                <h4>DXN Provides the Support</h4>
+                <p>Targeted nutritional support at the cellular level — enabling better energy, detoxification, and systemic balance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="card" style="text-align:center;padding:24px">
+          <div style="font-size:42px;margin-bottom:12px">&#127950;&#65039;</div>
+          <div class="card-title">Body = High-Performance Vehicle</div>
+          <div class="card-text">Premium fuel + regular maintenance + quality parts = peak performance and longevity. DXN is your body's premium maintenance system.</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div class="card" style="text-align:center;padding:20px">
+            <div style="font-size:20px;font-weight:800;color:var(--gold)">Macro</div>
+            <div style="font-size:12px;color:var(--cream-dk);margin-top:8px">Protein · Fat<br>Carbohydrate · Fiber</div>
+          </div>
+          <div class="card" style="text-align:center;padding:20px">
+            <div style="font-size:20px;font-weight:800;color:var(--green-lt)">Micro</div>
+            <div style="font-size:12px;color:var(--cream-dk);margin-top:8px">Vitamins · Minerals<br>Enzymes · Phytonutrients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 19 — CREATE DEMAND
+══════════════════════════════════════════════ -->
+<section class="slide" id="s19" data-label="Business">
+  <div class="slide-inner">
+    <div class="section-label">Business Framework</div>
+    <h2 class="section-title">Knowledge Creates<br><span class="gold">Demand</span></h2>
+    <div class="gold-line"></div>
+    <p class="section-body">The path to growing your DXN business is simple and logical. Product knowledge is the multiplier that transforms every conversation into revenue.</p>
+
+    <div style="margin-top:40px">
+      <div class="card" style="padding:36px">
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <div style="display:flex;align-items:center;gap:20px;padding:16px;background:rgba(73,136,196,.06);border-radius:12px">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);font-size:16px;flex-shrink:0">1</div>
+            <div style="font-size:16px;font-weight:600;color:var(--cream)">Understand Food Theories</div>
+            <div style="margin-left:auto;font-size:13px;color:var(--cream-dk)">Foundation</div>
+          </div>
+          <div style="text-align:center;color:var(--gold);font-size:20px;line-height:1.8">&#8595;</div>
+          <div style="display:flex;align-items:center;gap:20px;padding:16px;background:rgba(73,136,196,.06);border-radius:12px">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);font-size:16px;flex-shrink:0">2</div>
+            <div style="font-size:16px;font-weight:600;color:var(--cream)">Master Product Knowledge</div>
+            <div style="margin-left:auto;font-size:13px;color:var(--cream-dk)">Knowledge</div>
+          </div>
+          <div style="text-align:center;color:var(--gold);font-size:20px;line-height:1.8">&#8595;</div>
+          <div style="display:flex;align-items:center;gap:20px;padding:16px;background:rgba(73,136,196,.06);border-radius:12px">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);font-size:16px;flex-shrink:0">3</div>
+            <div style="font-size:16px;font-weight:600;color:var(--cream)">Create Consumer Demand</div>
+            <div style="margin-left:auto;font-size:13px;color:var(--cream-dk)">Execution</div>
+          </div>
+          <div style="text-align:center;color:var(--gold);font-size:20px;line-height:1.8">&#8595;</div>
+          <div style="display:flex;align-items:center;gap:20px;padding:16px;background:rgba(28,77,141,.12);border:1px solid rgba(28,77,141,.4);border-radius:12px">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--green-lt);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);font-size:16px;flex-shrink:0">&#10003;</div>
+            <div style="font-size:16px;font-weight:600;color:var(--green-lt)">Increase Sales &#8594; Grow Your Bonus</div>
+            <div style="margin-left:auto;font-size:13px;color:var(--green-lt)">Result</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 20 — CLOSING
+══════════════════════════════════════════════ -->
+<section class="slide closing-bg" id="s20" data-label="Close">
+  <div class="ring1 orbit-ring" style="opacity:.5"></div>
+  <div class="ring2 orbit-ring" style="opacity:.3"></div>
+
+  <div class="slide-inner" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+    <div class="section-label" style="justify-content:center">DXN International</div>
+
+    <h2 class="closing-title">
+      Let's Build a<br>
+      <span style="color:var(--gold)">Healthy,<br>Wealthy</span><br>
+      Society.
+    </h2>
+
+    <div style="width:60px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:32px auto;opacity:0;transition:all .8s ease .4s" class="closing-line"></div>
+
+    <p style="font-size:18px;color:var(--cream-dk);max-width:500px;opacity:0;transform:translateY(16px);transition:all .8s ease .5s" class="closing-msg">
+      Be a product of the products. Experience DXN. Share DXN. Grow with DXN.
+    </p>
+
+    <div style="display:flex;gap:16px;margin-top:40px;flex-wrap:wrap;justify-content:center;opacity:0;transform:translateY(16px);transition:all .8s ease .65s" class="closing-cta">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:linear-gradient(135deg,var(--gold-dk),var(--gold));color:var(--bg);font-weight:700;font-size:15px;border-radius:30px;letter-spacing:.03em">
+        &#127760; www.dxn2u.com
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:1px solid var(--glass-bd);color:var(--cream);font-weight:600;font-size:15px;border-radius:30px;letter-spacing:.03em">
+        &#128222; Contact Your Sponsor
+      </div>
+    </div>
+
+    <p class="disclaimer" style="margin-top:48px">
+      Food and dietary supplement products sold by DXN are intended to contribute to the daily diet and overall health and are not intended for use in the prevention, treatment, mitigation, or cure of any disease or health-related condition. Consult an appropriately licensed health care practitioner for a medical history evaluation, diagnosis, treatment, and health recommendations.
+    </p>
+  </div>
+</section>
+
+<!-- JS Modules -->
+<script src="js/particles.js"></script>
+<script src="js/observer.js"></script>
+<script src="js/navigation.js"></script>
+
+</body>
+</html>

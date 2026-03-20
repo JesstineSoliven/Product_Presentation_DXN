@@ -1,0 +1,211 @@
+/* ════════════════════════════════════════════════
+   SLIDE 07 · DRUG vs GANODERMA — Battle Layout
+════════════════════════════════════════════════ */
+
+/* ── wrapper ── */
+.s7-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Title row mirrors the battle grid columns ── */
+.s7-title-row {
+  display: grid;
+  grid-template-columns: 1fr 104px 1fr;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+.s7-title-vs {
+  text-align: center;
+  font-size: clamp(22px, 3vw, 38px);
+  font-weight: 800;
+  color: rgba(255,255,255,.28);
+  letter-spacing: -0.02em;
+}
+
+/* ── 3-column battle grid ── */
+.s7-battle {
+  display: grid;
+  grid-template-columns: 1fr 104px 1fr;
+  margin-top: 22px;
+  gap: 0;
+  align-items: stretch;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: all .75s cubic-bezier(.16,1,.3,1) .12s;
+}
+.visible .s7-battle { opacity: 1; transform: translateY(0); }
+
+/* ── Each column box ── */
+.s7-col-wrap {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.s7-drug-wrap { background: #0d2352; }
+.s7-gano-wrap { background: #145c22; }
+
+/* ── Column header (top section of each box) ── */
+.s7-col-head {
+  padding: 18px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.s7-head-icon {
+  font-size: 30px;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+
+.s7-score-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 4px;
+}
+.s7-score-drug {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,100,100,.5);
+  color: #ff9999;
+}
+.s7-score-gano {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(100,255,120,.5);
+  color: #88ffaa;
+}
+
+.s7-head-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: .02em;
+}
+
+.s7-head-sub {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+  color: rgba(255,255,255,.55);
+}
+
+/* ── VS orb in center header ── */
+.s7-cat-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 10px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.s7-vs-orb {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-dk), var(--gold));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 900; color: var(--bg);
+  letter-spacing: .04em;
+  box-shadow: 0 0 22px rgba(191,156,87,.4), 0 0 8px rgba(191,156,87,.25);
+}
+
+/* ── Data rows inside each box ── */
+.s7-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  flex: 1;
+  text-align: center;
+}
+.s7-last { border-bottom: none !important; }
+
+/* ── Center category label column ── */
+.s7-center-col {
+  display: flex;
+  flex-direction: column;
+}
+.s7-cat-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 6px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: #0d2352;
+  opacity: 1;
+  background: rgba(255,255,255,.018);
+  border-bottom: 1px solid rgba(255,255,255,.03);
+  line-height: 1.35;
+  flex: 1;
+}
+
+/* ── ✗ / ✓ indicators ── */
+.s7-x, .s7-check {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 900;
+  flex-shrink: 0;
+}
+.s7-x     { background: rgba(255,80,80,.2);  border: 1px solid rgba(255,100,100,.5); color: #ff9999; }
+.s7-check { background: rgba(80,255,120,.15); border: 1px solid rgba(100,255,140,.5); color: #88ffaa; }
+
+/* ── Cell text — white across both boxes ── */
+.s7-cell-text {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ── Bottom verdict strip ── */
+.s7-verdict {
+  margin-top: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, rgba(73,136,196,.1), rgba(73,136,196,.04));
+  border: 1px solid rgba(73,136,196,.18);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: all .7s ease .48s;
+}
+.visible .s7-verdict { opacity: 1; transform: translateY(0); }
+
+.s7-verdict-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+
+.s7-verdict-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.s7-verdict-body p {
+  font-size: 13px;
+  color: var(--cream-dk);
+  line-height: 1.65;
+  margin: 0;
+}
+.s7-verdict-body strong { color: var(--gold); }
+.s7-disclaimer-txt {
+  font-size: 9.5px;
+  color: rgba(191,184,158,.28);
+  line-height: 1.5;
+}

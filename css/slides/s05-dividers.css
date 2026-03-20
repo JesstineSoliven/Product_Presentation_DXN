@@ -1,0 +1,31 @@
+/* ─── SECTION DIVIDER SLIDES (s05, s08, s11, s14) ─── */
+.section-divider-slide {
+  background: linear-gradient(135deg, #0D2347 0%, #080E1F 60%);
+}
+
+.divider-num {
+  font-size: clamp(100px, 15vw, 180px);
+  font-weight: 900;
+  color: rgba(73,136,196,.06);
+  letter-spacing: -0.05em;
+  line-height: 1;
+  position: absolute;
+  right: 5%; bottom: -2%;
+  pointer-events: none; user-select: none;
+}
+
+.divider-title {
+  font-size: clamp(36px, 6vw, 80px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.divider-sub {
+  font-size: clamp(14px, 1.8vw, 18px);
+  color: var(--gold);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+}

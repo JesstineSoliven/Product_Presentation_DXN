@@ -1,0 +1,33 @@
+/* ─── DESIGN TOKENS ─── */
+:root {
+  --bg:        #F0F5FC;
+  --bg2:       #E8EFF8;
+  --gold:      #1C4D8D;
+  --gold-lt:   #4988C4;
+  --gold-dk:   #0F2854;
+  --green:     #EBF3FB;
+  --green-lt:  #4988C4;
+  --cream:     #0F2854;
+  --cream-dk:  #2A5E8C;
+  --glass:     rgba(255,255,255,0.82);
+  --glass-bd:  rgba(73,136,196,0.22);
+  --r:         16px;
+  --r-lg:      28px;
+  --shadow:    0 6px 28px rgba(15,40,84,0.1);
+}
+
+/* ─── RESET ─── */
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(160deg, #EEF3FB 0%, #F5F9FD 50%, #ECF2FA 100%) fixed;
+  color: var(--cream);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+}
