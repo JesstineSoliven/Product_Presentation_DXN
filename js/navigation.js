@@ -53,4 +53,25 @@
       if (Math.abs(rect.top) < window.innerHeight * .4) currentSlide = i;
     });
   }, { passive: true });
+
+  /* ── Touch swipe navigation for mobile ── */
+  let touchStartY    = 0;
+  let touchStartTime = 0;
+
+  document.addEventListener('touchstart', e => {
+    touchStartY    = e.touches[0].clientY;
+    touchStartTime = Date.now();
+  }, { passive: true });
+
+  document.addEventListener('touchend', e => {
+    const deltaY  = touchStartY - e.changedTouches[0].clientY;
+    const elapsed = Date.now() - touchStartTime;
+    if (Math.abs(deltaY) < 50 || elapsed > 400) return;
+    if (deltaY > 0) {
+      currentSlide = Math.min(currentSlide + 1, slides.length - 1);
+    } else {
+      currentSlide = Math.max(currentSlide - 1, 0);
+    }
+    slides[currentSlide].scrollIntoView({ behavior: 'smooth' });
+  }, { passive: true });
 })();

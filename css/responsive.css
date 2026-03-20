@@ -1,0 +1,385 @@
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE — Full Device Coverage
+   Breakpoints:
+     ≤ 1024px  Tablet Landscape
+     ≤  768px  Tablet Portrait / Large Phone
+     ≤  480px  Mobile Phone
+     ≤  360px  Small Phone
+═══════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────
+   BASE TOUCH IMPROVEMENTS
+───────────────────────────────────────────────────── */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (hover: none) {
+  /* Disable hover lifts on touch devices */
+  .card:hover {
+    transform: none !important;
+    border-color: var(--glass-bd) !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   TABLET LANDSCAPE  (≤ 1024px)
+───────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .slide { padding: 60px 36px; }
+
+  /* Hero logo slightly smaller */
+  .hero-logo-float { width: clamp(220px, 28vw, 340px); }
+
+  /* Market chart tighter */
+  .market-timeline { gap: 20px !important; padding: 24px !important; }
+
+  /* s7: slightly narrower center column */
+  .s7-battle, .s7-title-row { grid-template-columns: 1fr 86px 1fr; }
+
+  /* col-split gap */
+  .col-split { gap: 40px; }
+}
+
+/* ─────────────────────────────────────────────────────
+   TABLET PORTRAIT  (≤ 768px)
+───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* ── Layout ── */
+  .slide { padding: 72px 24px 64px; }
+
+  /* ── Navigation: move to bottom horizontal bar ── */
+  #nav {
+    right: auto;
+    top: auto;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(73, 136, 196, 0.18);
+    border-radius: 24px;
+    padding: 8px 14px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .nav-dot { width: 7px; height: 7px; }
+  .nav-dot.active { transform: scale(1.5); }
+
+  /* ── Progress bar ── */
+  #progress-bar { height: 3px; }
+
+  /* ── Hero slide ── */
+  #s1 {
+    background:
+      linear-gradient(to bottom, rgba(0,80,30,0.97) 0%, rgba(0,100,35,0.88) 100%),
+      url('../Images/Slide_1/LAB.jpg') center / cover no-repeat;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+
+  #s1 .slide-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #s1 .slide-inner > div:first-child {
+    max-width: 100% !important;
+  }
+
+  .hero-logo-wrap {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  .hero-logo-float {
+    width: clamp(180px, 55vw, 280px);
+  }
+
+  .hero-title { text-align: center; }
+  .hero-sub   { margin-left: auto; margin-right: auto; text-align: center; }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 24px !important;
+    flex-wrap: wrap;
+  }
+
+  .section-label { justify-content: center !important; }
+  .gold-line     { margin-left: auto !important; margin-right: auto !important; }
+  .section-body  { margin-left: auto; margin-right: auto; }
+
+  /* ── Slide 2: Market chart scrollable on tablet ── */
+  .market-timeline {
+    gap: 16px !important;
+    padding: 20px !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .market-bar-wrap { min-width: 80px; }
+
+  /* ── Slide 3: Company watermark ── */
+  #s3 img[aria-hidden="true"] {
+    opacity: 0.03 !important;
+    width: 80% !important;
+  }
+
+  /* ── Slide 6: Bioactive ── */
+  #s6 .col-split { grid-template-columns: 1fr; gap: 28px; }
+
+  /* ── Slide 7: Drug vs Gano ── */
+  .s7-battle,
+  .s7-title-row { grid-template-columns: 1fr 56px 1fr; }
+
+  .s7-cell {
+    padding: 9px 8px;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .s7-cell-text  { font-size: 10px; line-height: 1.35; text-align: center; }
+  .s7-cat-cell   { font-size: 7.5px; padding: 6px 3px; }
+  .s7-x,
+  .s7-check      { width: 16px; height: 16px; font-size: 9px; }
+  .s7-vs-orb     { width: 36px; height: 36px; font-size: 10px; }
+  .s7-head-name  { font-size: 11px; }
+  .s7-head-sub   { font-size: 8.5px; }
+  .s7-score-badge{ font-size: 8px; padding: 2px 7px; }
+  .s7-col-head   { padding: 12px 6px; gap: 4px; }
+
+  /* Verdict strip */
+  .s7-verdict { padding: 12px 16px; gap: 10px; }
+  .s7-verdict-body p { font-size: 12px; }
+
+  /* ── Slide 10: Spirulina ── */
+  #s10 .col-split { grid-template-columns: 1fr; gap: 28px; }
+
+  /* ── Slide 17: Enzyme theory ── */
+  #s17 .col-split { grid-template-columns: 1fr; gap: 28px; }
+
+  /* ── Slide 18: Positioning ── */
+  #s18 .grid-2 { grid-template-columns: 1fr; }
+
+  /* ── Cards ── */
+  .card { padding: 20px 18px; }
+
+  /* ── Closing ── */
+  .closing-title { font-size: clamp(36px, 8vw, 64px); }
+}
+
+/* ─────────────────────────────────────────────────────
+   MOBILE PHONE  (≤ 480px)
+───────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .slide { padding: 60px 16px 56px; }
+
+  /* ── Typography ── */
+  .section-title { font-size: clamp(26px, 8vw, 40px) !important; }
+  .hero-title    { font-size: clamp(36px, 11vw, 52px) !important; }
+  .hero-sub      { font-size: 15px !important; }
+
+  /* ── Nav bottom bar ── */
+  #nav { gap: 8px; padding: 7px 12px; bottom: 10px; }
+  .nav-dot { width: 6px; height: 6px; }
+
+  /* ── Hero: absolute logo as ghost watermark ── */
+  .hero-logo-float { width: clamp(140px, 50vw, 200px); }
+  .hero-stats {
+    gap: 16px !important;
+    font-size: 13px;
+  }
+  .stat-num { font-size: clamp(28px, 8vw, 48px) !important; }
+
+  /* ── Cards ── */
+  .card { padding: 16px 14px; border-radius: 14px; }
+  .card-title { font-size: 16px; }
+  .card-text  { font-size: 13px; }
+  .icon-badge { width: 44px; height: 44px; font-size: 22px; margin-bottom: 12px; }
+
+  /* ── Slide 2: Market chart ── */
+  .market-timeline {
+    gap: 10px !important;
+    padding: 16px !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .market-bar-wrap { min-width: 72px; }
+  .market-val  { font-size: 15px; }
+  .market-year { font-size: 11px; }
+
+  /* ── Slide 2b: Product image fix ── */
+  #s2b .s2b-img-wrap img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+  #s2b .slide-inner {
+    height: auto !important;
+    min-height: calc(100svh - 120px);
+  }
+
+  /* ── Slide 3: Cards vertical ── */
+  #s3 .grid-3 { grid-template-columns: 1fr !important; }
+
+  /* ── Slide 4: Technology ── */
+  #s4 .grid-2 { grid-template-columns: 1fr !important; }
+
+  /* ── Slide 7: Full vertical stack ── */
+  .s7-battle {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Reorder: Drug → VS → Gano */
+  .s7-drug-wrap  { order: 1; border-radius: 12px 12px 0 0; }
+  .s7-center-col { order: 2; }
+  .s7-gano-wrap  { order: 3; border-radius: 0 0 12px 12px; }
+
+  /* Center column: horizontal VS strip, hide category labels */
+  .s7-center-col {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 0;
+    background: rgba(255,255,255,.04);
+  }
+  .s7-cat-cell  { display: none; }
+  .s7-cat-head  { padding: 6px; border: none; }
+  .s7-vs-orb    { width: 42px; height: 42px; font-size: 12px; }
+
+  /* Cells: horizontal layout with icon + text */
+  .s7-cell {
+    flex-direction: row;
+    padding: 10px 14px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+  }
+  .s7-cell-text  { text-align: left; font-size: 12px; }
+  .s7-x,
+  .s7-check      { width: 18px; height: 18px; font-size: 10px; flex-shrink: 0; }
+  .s7-head-name  { font-size: 14px; }
+  .s7-head-sub   { font-size: 9.5px; }
+  .s7-score-badge{ font-size: 9px; }
+  .s7-col-head   { padding: 14px 16px; gap: 5px; }
+
+  /* Title row */
+  .s7-title-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .s7-title-row .section-title { text-align: center; }
+
+  /* ── Slide 9: RG & GL ── */
+  #s9 .grid-2 { grid-template-columns: 1fr !important; }
+
+  /* ── Slide 10: Spirulina ── */
+  #s10 .col-split { grid-template-columns: 1fr !important; gap: 24px; }
+  #s10 .card .grid-2 { grid-template-columns: repeat(2,1fr) !important; }
+
+  /* ── Slide 12: Coffee ── */
+  #s12 .grid-3 { grid-template-columns: 1fr !important; }
+
+  /* ── Slide 13: Drinks ── */
+  #s13 .grid-2 { grid-template-columns: 1fr !important; }
+
+  /* ── Slide 15: Skincare ── */
+  #s15 .grid-2 { grid-template-columns: 1fr !important; }
+
+  /* ── Slide 16: Theories ── */
+  #s16 .grid-3 { grid-template-columns: 1fr !important; }
+
+  /* ── Slide 17: Enzyme ── */
+  #s17 .col-split { grid-template-columns: 1fr !important; gap: 24px; }
+
+  /* ── Slide 18: Positioning ── */
+  #s18 .grid-2 { grid-template-columns: 1fr !important; }
+
+  /* ── Slide 19: Business steps ── */
+  #s19 .card { padding: 20px 14px !important; }
+
+  /* ── Steps layout ── */
+  .step { gap: 14px; }
+  .step-content h4 { font-size: 15px; }
+
+  /* ── Callout ── */
+  .callout { padding: 16px 18px; }
+  .callout p { font-size: 12px; }
+
+  /* ── Closing ── */
+  .closing-title { font-size: clamp(32px, 10vw, 52px) !important; }
+
+  /* ── Dividers ── */
+  .divider-title { font-size: clamp(28px, 10vw, 48px); }
+  .divider-sub   { font-size: 13px; }
+  .divider-num   { font-size: clamp(80px, 18vw, 130px); }
+}
+
+/* ─────────────────────────────────────────────────────
+   SMALL PHONE  (≤ 360px)
+───────────────────────────────────────────────────── */
+@media (max-width: 360px) {
+  .slide { padding: 56px 12px 48px; }
+
+  .section-title { font-size: clamp(22px, 9vw, 32px) !important; }
+  .hero-title    { font-size: clamp(30px, 11vw, 44px) !important; }
+
+  .card { padding: 14px 12px; border-radius: 12px; }
+  .card-title { font-size: 15px; }
+
+  /* Very small: single-col hero stats vertically */
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px !important;
+  }
+
+  /* Hide dividers between stats */
+  .hero-stats > div[style*="width:1px"] { display: none; }
+
+  /* Nav smaller */
+  #nav { gap: 6px; padding: 6px 10px; }
+  .nav-dot { width: 5px; height: 5px; }
+}
+
+/* ─────────────────────────────────────────────────────
+   LANDSCAPE PHONE  (short viewport)
+───────────────────────────────────────────────────── */
+@media (max-height: 500px) and (orientation: landscape) {
+  .slide {
+    min-height: auto;
+    padding: 24px 32px;
+    scroll-snap-align: none;
+  }
+
+  html { scroll-snap-type: none; }
+
+  .hero-title    { font-size: clamp(28px, 5vh, 48px) !important; }
+  .section-title { font-size: clamp(22px, 4vh, 36px) !important; }
+
+  .hero-logo-wrap { display: none; }
+  .divider-num    { display: none; }
+
+  .s7-battle { grid-template-columns: 1fr 60px 1fr; }
+  .s7-cat-cell { font-size: 7px; padding: 4px 2px; }
+  .s7-cell     { padding: 6px 8px; }
+  .s7-cell-text{ font-size: 10px; }
+}
+
+/* ─────────────────────────────────────────────────────
+   PRINT / PREFERS REDUCED MOTION
+───────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

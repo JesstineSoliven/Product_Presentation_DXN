@@ -44,6 +44,17 @@
   .slide { padding: 40px 20px; }
 }
 
+/* ── Safe area for notched phones (iPhone X+) ── */
+@supports (padding: max(0px)) {
+  #nav {
+    bottom: max(14px, env(safe-area-inset-bottom));
+  }
+  .slide {
+    padding-left:  max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+}
+
 /* ─── NAV DOTS ─── */
 #nav {
   position: fixed;
