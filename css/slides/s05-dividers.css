@@ -1,3 +1,12 @@
+/* ─── Ghost mushroom images — s5 ─── */
+.s5-ghost {
+  position: absolute;
+  opacity: 0.07;
+  pointer-events: none;
+  user-select: none;
+  object-fit: contain;
+}
+
 /* ─── SECTION DIVIDER SLIDES (s05, s08, s11, s14) ─── */
 .section-divider-slide {
   background: linear-gradient(135deg, #0D2347 0%, #080E1F 60%);
